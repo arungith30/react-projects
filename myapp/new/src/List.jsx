@@ -1,17 +1,14 @@
 /* eslint-disable react/prop-types */
 
-
 // eslint-disable-next-line react/prop-types
-
 
 const List = ({ people }) => {
   return (
     <>
-      {
-      people.map((person) => {
+      {people.map((person) => {
         const { id, name, age, image } = person;
         return (
-          <article key={id} className='person'>
+          <article key={id} className="person">
             <img src={image} alt={name} />
             <div>
               <h4>{name}</h4>
@@ -19,9 +16,7 @@ const List = ({ people }) => {
             </div>
           </article>
         );
-      }
-      )
-      }
+      })}
     </>
   );
 };
